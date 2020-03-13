@@ -15,7 +15,7 @@ class WallAround():
     self.sensor_values = messages
 
   def wall_front(self,ls):
-    return ls.left_forward > 50 or ls.right_foeward > 50
+    return ls.left_forward > 50 or ls.right_forward > 50
 
   def too_right(self,ls):
     return ls.right_side > 50
