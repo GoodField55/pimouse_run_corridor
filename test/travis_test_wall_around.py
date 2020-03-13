@@ -30,9 +30,6 @@ class WallAroundTest(unittest.TestCase):
     left, right = self.set_and_get(0,51,0,0) #curve to right
     self.assertTrue(left > right,"don't curve to right")
 
-    left, right = self.set_and_get(0,5,0,0) #don't control when far from wall
-    self.assertTrue(0 < left == right,"curve wrongly")
-
 if __name__ == '__main__':
   time.sleep(3)
   rospy.init_node('travis_test_wall_around')
