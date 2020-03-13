@@ -15,7 +15,7 @@ class WallTrace():
     self.sensor_values = messages
 
   def run(self):
-    rate = rospy.Rate(10)
+    rate = rospy.Rate(20)
     data = Twist()
 
     accel = 0.02
