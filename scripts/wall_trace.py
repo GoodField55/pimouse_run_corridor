@@ -31,7 +31,7 @@ class WallTrace():
       if data.linear.x <0.2:   data.angular.z = 0.0
       elif s.left_side < 10:   data.angular.z = 0.0
       else:
-        traget = 50
+        target = 50
         error = (target - s.left_side)/50.0
         data.angular.z = error * 3 * math.pi / 180.0
 
